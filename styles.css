@@ -1,0 +1,266 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: black;
+}
+
+@font-face {
+    font-family: "myFontLight";
+    src: url(../Domaci/Font/LemonMilkLight-owxMq.otf) format("truetype");
+}
+
+@font-face {
+    font-family: "myFontBold";
+    src: url(../Domaci/Font/LemonMilkBold-gx2B3.otf) format("truetype");
+}
+
+a{
+    padding: 10px;
+    background-color: transparent;
+}
+
+a {
+    color: white;
+    font-family: myFontLight;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+a:hover {
+    color: black;
+}
+
+p, h1 {
+    background-color: transparent;
+}
+
+#logo {
+    width: 100px;
+    height: 100px;
+    background-color: transparent;
+}
+
+#logo:hover {
+    width: 105px;
+    height: 105px;
+}
+
+#myheader {
+    background-color:rgb(158, 136, 136);
+    position: fixed;
+    height: 100px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#akcija {
+   height: 100%;
+   width: 100%;
+   display: inline;
+}
+
+.roditelj div {
+    background-color: black;
+    color: white;
+    font-family: myFontLight;
+}
+
+.roditelj {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#d1 {
+    width: 40em;
+    padding-top: 170px;
+    padding-bottom: 150px;
+    text-align: center;
+}
+
+#dd {
+    font-family: myFontLight;
+    font-weight: bold;
+}
+
+#d2 {
+    text-align: center;
+    width: 900px;
+    height: 350px;
+    background-image: url(../Domaci/Slike/sushi.png);
+    background-size: cover;
+    border-color: white;
+    border-style: solid;
+}
+
+.jel {
+    color: white;
+}
+
+#jel1 {
+    margin-top: 50px;
+}
+
+#jel2 {
+    margin-left: 270px;
+    margin-right: 270px;
+    margin-top: 20px;
+    margin-bottom: 60px;
+}
+
+#jeld {
+    color: rgb(66, 66, 66);
+    background-color: white;
+    font-family: myFontLight;
+    font-weight: bold;
+    border: none;
+    height: 40px;
+    width: 190px;
+    margin-bottom: 300px;
+}
+
+#myfooter {
+    background-color:rgb(158, 136, 136);
+    height: 700px;
+    width: 100%;
+    display: flex;
+    margin-top: 65px;
+    justify-content: center;
+    text-align: center;
+}
+
+.roditelj1 div {
+    background-color: rgb(158, 136, 136);
+    color:  rgb(158, 136, 136);
+    font-family: myFontLight;
+}
+
+.roditelj1 {
+    display: flex;
+    flex-direction: column;
+}
+
+#fb {
+    height: 40px;
+    width: 40px;
+    background-color: transparent;
+}
+
+#ig {
+    height: 37px;
+    width: 37px;
+    background-color: transparent;
+    justify-self: center;
+}
+
+#news {
+    color: black;
+}
+
+#f1 {
+    padding-top: 25px;
+}
+
+#f2 {
+    padding-top: 40px;
+}
+
+#news1 {
+    background-color: rgb(158, 136, 136);
+    color: black;
+    font-family: myFontLight;
+    margin-top: 50px;
+    height: 30px;
+    width: 270px;
+    margin-bottom: 30px;
+}
+
+#news2 {
+    background-color: black;
+    color: rgb(158, 136, 136);
+    font-family: myFontLight;
+    font-weight: bold;
+    border: none;
+    height: 35px;
+    width: 190px;
+    margin-bottom: 30px;
+}
+
+::placeholder {
+    color: black;
+    opacity: 0.5;
+  }
+
+#f3 {
+    padding-top: 40px;
+}
+
+#rv {
+    color: black;
+    background-color: transparent;
+}
+
+#rv1 {
+    padding-top: 10px;
+    color: black;
+    background-color: transparent;
+}
+
+#kraj {
+    color:black;
+    font-family: myFontLight;
+    font-size: 10px;
+    margin-top: 20px;
+}
+
+/* O NAMA */
+
+#d1onama {
+    width: 40em;
+    padding-top: 100px;
+    padding-bottom: 50px;
+    text-align: center;
+}
+
+#d2onama {
+    background-image: url(../Domaci/Slike/onama.jpg);
+    background-size: cover;
+    width: 554px;
+    height: 368px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#d3onama{
+    width: 40em;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+}
+
+/*GALERIJA*/
+
+.roditelj2 {
+    box-sizing: border-box;
+    display: inline;
+    justify-content: center;
+    align-items: center;
+}
+
+.red {
+    display: flex;
+  }
+  
+.kolona {
+    flex: 33.33%;
+    padding: 5px;
+}
+        
