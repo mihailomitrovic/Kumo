@@ -30,7 +30,8 @@ a {
 }
 
 a:hover {
-    color: black;
+    color: white;
+    opacity: 0.8;
 }
 
 p, h1 {
@@ -41,20 +42,21 @@ p, h1 {
     width: 100px;
     height: 100px;
     background-color: transparent;
+    align-self: center;
 }
 
 #logo:hover {
-    width: 105px;
-    height: 105px;
+    width: 100px;
+    height: 100px;
 }
 
 #myheader {
-    background-color:rgb(158, 136, 136);
+    background-color:rgb(0, 0, 0, .9);
     position: fixed;
     height: 100px;
     width: 100%;
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: 40% 8% 40%;
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -63,7 +65,21 @@ p, h1 {
 #akcija {
    height: 100%;
    width: 100%;
-   display: inline;
+   padding-top: 100px;
+   display: flex;
+   max-width: none;
+}
+
+#h1 {
+    text-align: right;
+}
+
+#h2 {
+    align-content: center;
+}
+
+#h3 {
+    text-align: left;
 }
 
 .roditelj div {
@@ -81,7 +97,7 @@ p, h1 {
 
 #d1 {
     width: 40em;
-    padding-top: 170px;
+    padding-top: 120px;
     padding-bottom: 150px;
     text-align: center;
 }
@@ -99,6 +115,7 @@ p, h1 {
     background-size: cover;
     border-color: white;
     border-style: solid;
+    border-width: 2px;
 }
 
 .jel {
@@ -106,30 +123,36 @@ p, h1 {
 }
 
 #jel1 {
-    margin-top: 50px;
+    margin-top: 65px;
+    color: rgb(223, 162, 121);
 }
 
 #jel2 {
     margin-left: 270px;
     margin-right: 270px;
     margin-top: 20px;
-    margin-bottom: 60px;
+    margin-bottom: 30px;
 }
 
 #jeld {
-    color: rgb(66, 66, 66);
+    color: rgb(0, 0, 0);
     background-color: white;
     font-family: myFontLight;
     font-weight: bold;
     border: none;
     height: 40px;
     width: 190px;
-    margin-bottom: 300px;
+    margin-bottom: 350px;
+}
+
+#jeld:hover {
+    cursor: pointer;
+    background-color: rgb(224, 224, 224);
 }
 
 #myfooter {
-    background-color:rgb(158, 136, 136);
-    height: 700px;
+    background-color:rgb(231, 214, 194);
+    height: 600px;
     width: 100%;
     display: flex;
     margin-top: 65px;
@@ -138,8 +161,8 @@ p, h1 {
 }
 
 .roditelj1 div {
-    background-color: rgb(158, 136, 136);
-    color:  rgb(158, 136, 136);
+    background-color: rgb(231, 214, 194);
+    color:  rgb(231, 214, 194);
     font-family: myFontLight;
 }
 
@@ -149,16 +172,18 @@ p, h1 {
 }
 
 #fb {
-    height: 40px;
-    width: 40px;
+    height: 30px;
+    width: 30px;
     background-color: transparent;
+    padding-right: 2px;
+    margin-top: 50px;
 }
 
 #ig {
-    height: 37px;
-    width: 37px;
+    height: 30px;
+    width: 30px;
     background-color: transparent;
-    justify-self: center;
+    padding-left: 2px;
 }
 
 #news {
@@ -170,38 +195,41 @@ p, h1 {
 }
 
 #f2 {
-    padding-top: 40px;
+    padding-top: 30px;
 }
 
 #news1 {
-    background-color: rgb(158, 136, 136);
+    background-color: rgb(231, 214, 194);
     color: black;
     font-family: myFontLight;
-    margin-top: 50px;
+    margin-top: 20px;
     height: 30px;
-    width: 270px;
-    margin-bottom: 30px;
+    width: 200px;
+    margin-bottom: 20px;
+    text-align: center;
 }
 
 #news2 {
     background-color: black;
-    color: rgb(158, 136, 136);
+    color: 	rgb(231, 214, 194);
     font-family: myFontLight;
     font-weight: bold;
     border: none;
     height: 35px;
-    width: 190px;
-    margin-bottom: 30px;
+    width: 120px;
+    margin-bottom: 80px;
+}
+
+#news2:hover {
+    background-color: rgb(17, 17, 17);
+    cursor: pointer;
 }
 
 ::placeholder {
     color: black;
     opacity: 0.5;
+    text-align: center;
   }
-
-#f3 {
-    padding-top: 40px;
-}
 
 #rv {
     color: black;
@@ -218,31 +246,37 @@ p, h1 {
     color:black;
     font-family: myFontLight;
     font-size: 10px;
-    margin-top: 20px;
+    margin-top: 80px;
+    margin-bottom: 50px;
+    font-style: italic;
 }
 
 /* O NAMA */
 
 #d1onama {
     width: 40em;
-    padding-top: 100px;
-    padding-bottom: 50px;
+    padding-top: 160px;
     text-align: center;
+    padding-bottom: 60px;
+}
+
+#d1tekst {
+    font-style: italic;
+    color: rgb(231, 214, 194);
+    font-size: 15px;
 }
 
 #d2onama {
     background-image: url(../Domaci/Slike/onama.jpg);
     background-size: cover;
-    width: 554px;
-    height: 368px;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    width: 752px;
+    height: 380px;
 }
 
 #d3onama{
     width: 40em;
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-top: 60px;
+    padding-bottom: 30px;
     text-align: center;
 }
 
@@ -253,6 +287,105 @@ p, h1 {
     display: inline;
     justify-content: center;
     align-items: center;
+    text-align: center;
+}
+
+.gnaslov {
+    padding-bottom: 30px;
+    color: white;
+    font-family: myFontLight;
+    font-weight: bold;
+}
+
+#g1naslov {
+    padding-top: 160px;
+}
+
+#g2naslov {
+    padding-top: 30px;
+}
+
+#g3naslov {
+    padding-top: 30px;
+}
+
+.red {
+    display: flex;
+  }
+  
+.kolona {
+    flex: 60%;
+    padding: 15px;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+/* KONTAKT */
+
+.roditelj3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.k {
+   color: white;
+   padding-bottom: 30px;
+   font-family: myFontLight;
+}
+
+#k1naslov {
+    padding-top: 160px;
+    color:rgb(231, 214, 194);
+    padding-bottom: 10px;
+}
+
+.k1tekst {
+    font-size: 15px;
+}
+
+#k2naslov {
+    color: rgb(231, 214, 194);
+    font-family: myFontLight;
+    padding-top: 80px;
+}
+
+.loktekst {
+    font-family: myFontLight;
+    color: white;
+    font-style: italic;
+    padding-top: 17px;
+    font-size: 15px;
+}
+
+.loksl:hover {
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+#k3naslov {
+    font-family: myFontLight;
+}
+
+.k3head {
+    text-decoration: underline;
+    color: rgb(167, 219, 157);
+}
+
+.k3tekst {
+    font-family: myFontLight;
+}
+
+#k3naslov {
+    color: rgb(231, 214, 194);
+    padding-top: 80px;
+}
+
+#k4naslov {
+    color: rgb(231, 214, 194);
+    padding-top: 80px;
 }
 
 .red {
@@ -261,6 +394,130 @@ p, h1 {
   
 .kolona {
     flex: 33.33%;
-    padding: 5px;
+    padding: 15px;
 }
-        
+
+#r1 {
+    background-color: rgb(231, 214, 194);
+    color: black;
+    font-family: myFontLight;
+    margin-top: 20px;
+    height: 30px;
+    width: 300px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#r2 {
+    background-color: rgb(231, 214, 194);
+    color: black;
+    font-family: myFontLight;
+    height: 30px;
+    width: 300px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#r3 {
+    background-color: rgb(231, 214, 194);
+    color: black;
+    font-family: myFontLight;
+    height: 30px;
+    width: 300px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+#rb {
+    background-color: black;
+    color: rgb(231, 214, 194);
+    font-family: myFontLight;
+    font-weight: bold;
+    border: solid;
+    border-color: rgb(231, 214, 194);
+    height: 50px;
+    width: 300px;
+    margin-bottom: 30px;
+}
+
+#rb:hover {
+    background-color: rgb(17, 17, 17);
+    cursor: pointer;
+}
+
+.ocenakl {
+    padding: 100px;
+}
+
+/* MENI */
+
+.redmeni {
+    display: flex;
+    text-align: center;
+  }
+  
+.kolonameni {
+    flex: 33.33%;
+    padding: 5px;
+    padding-top: 25px;
+}
+
+.menipodnaslov {
+    padding-bottom: 20px;
+    font-family: myFontLight;
+    color:rgb(231, 214, 194);
+    font-size: 25px;
+    text-align: center;
+    font-weight: bold;
+}
+
+#supepodnaslov {
+    padding-top: 160px;
+}
+
+.menipodnaslov {
+    padding-top: 60px;
+    scroll-margin-top: 100px;
+}
+
+.opis {
+    font-family: myFontLight;
+    color: white;
+    size: 10px;
+    text-align: center;
+    padding-top: 25px;
+}
+
+.lista {
+    list-style-type: none;
+    font-family: myFontLight;
+    color: white;
+    size: 10px;
+}
+
+#menifull {
+    display: grid;
+    grid-template-columns: 27% 46% 27%;
+}
+
+#menilevo {
+    display: flex;
+    padding-top: -200px;
+    margin-left: 40px;
+    position: fixed;
+    top: 30%;
+}
+
+.stavka {
+    padding-top: 5px;
+}
+
+#menidesno {
+    display: grid;
+    justify-content: left;
+}
+
+#logodno {
+    width: 30%;
+    text-align: center;
+}
