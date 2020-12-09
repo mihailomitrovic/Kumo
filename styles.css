@@ -4,6 +4,27 @@
 }
 
 body {
+    overflow: overlay;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+::-webkit-scrollbar-track {
+    box-shadow: transparent;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    background-color: transparent;
+    background-blend-mode: overlay;
+}
+
+::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    background: rgb(255, 255, 255); 
+}
+
+body {
     background-color: black;
 }
 
@@ -314,10 +335,14 @@ p, h1 {
   }
   
 .kolona {
-    flex: 60%;
+    flex: 33.3%;
     padding: 15px;
     margin-left: 25px;
     margin-right: 25px;
+}
+
+.fancylink {
+    padding: 0px;
 }
 
 /* KONTAKT */

@@ -68,17 +68,24 @@
                 <input type="text" id="r1" placeholder="IME"> <br>
                 <input type="text" id="r2" placeholder="EMAIL"> <br>
                 <input type="text" id="r3" placeholder="KOMENTAR"> <br>
-                <label for="ocena"> VAŠA OCENA ZA RESTORAN</label> <br>
-                <input type="radio" name="ocena" value="1" id="ocena1" class="ocenakl">
-                <label for="ocena">1</label>
-                <input type="radio" name="ocena" value="2" id="ocena2" class="ocenakl">
-                <label for="ocena">2</label>
-                <input type="radio" name="ocena" value="3" id="ocena3" class="ocenakl">
-                <label for="ocena">3</label>
-                <input type="radio" name="ocena" value="4" id="ocena4" class="ocenakl">
-                <label for="ocena">4</label>
-                <input type="radio" name="ocena" value="5" id="ocena5" class="ocenakl">
-                <label for="ocena">5</label> <br>
+                <label for="poseta">DA LI BISTE NAS POSETILI OPET?</label> <br>
+                <input type="radio" name="posetaime" value="NE" id="poseta1" class="poseta">
+                <label for="poseta">NE</label>
+                <input type="radio" name="posetaime" value="MOŽDA" id="poseta2" class="poseta">
+                <label for="poseta">MOŽDA</label>
+                <input type="radio" name="posetaime" value="DA" id="poseta3" class="poseta">
+                <label for="poseta">DA</label>
+                <br> <br>
+                <span>VAŠA OCENA: </span>
+                <select name="ocenaime" id="ocenanaziv" class="ocena">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+                <br>
+
 
  <br>
                 <button id="rb" onclick="prozor();">Pošalji</button>

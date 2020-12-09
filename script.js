@@ -1,4 +1,4 @@
-var r1v = document.getElementById("r1").value;
+/*var r1v = document.getElementById("r1").value;
 var r2v = document.getElementById("r2").value;
 var r3v = document.getElementById("r3").value;
 
@@ -7,7 +7,7 @@ function prozor() {
         alert("Fali vam ime.");
         return false;
     }
-    if (r2v.value == "") {
+    else if (r2v.value == "") {
         alert("Fali vam email.");
         return false;
     }
@@ -19,7 +19,7 @@ function prozor() {
         alert("Fale vam ime i email.");
         return false;
     }
-    else if (r1v.value == null && r3v.value == null) {
+    else if (r1v.value == "" && r3v.value == null) {
         alert("Fale vam ime i komentar.");
         return false;
     }
@@ -31,4 +31,5 @@ function prozor() {
         alert("Fale vam sva tri elementa.");
         return false;
     }
-}
+}*/
+
