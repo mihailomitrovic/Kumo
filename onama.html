@@ -9,18 +9,22 @@
 
 <body>
     <header class="header" id="myheader">
-        <div id="h1">
-            <a id="meni" href="http://localhost:8081/Domaci/meni.html">Meni</a>
-            <a id="onama" href="http://localhost:8081/Domaci/onama.html">O nama</a>
+        <div class="meniel">
+            <a id="meni" href="meni.html">Meni</a>
+        </div>
+        <div class="meniel">
+            <a id="onama" href="onama.html">O nama</a>
         </div>
 
-        <div id="h2">
-            <a href="http://localhost:8081/Domaci/index.html"><img id="logo" src="Slike/logo.png"></a>
+        <div class="meniel">
+            <a href="index.html"><img id="logo" alt = "KUMO" src="Slike/logo.png"></a>
         </div>
         
-        <div id="h3">
-            <a id="galerija" href="http://localhost:8081/Domaci/galerija.html">Galerija</a>
-            <a id="kontakt" href="http://localhost:8081/Domaci/kontakt.html">Kontakt</a>
+        <div class="meniel">
+            <a id="galerija" href="galerija.html">Galerija</a>
+        </div>
+        <div class="meniel">
+            <a id="kontakt" href="kontakt.html">Kontakt</a>
         </div>
     </header>
 
@@ -28,11 +32,12 @@
         <div id="d1onama">
             <h1 id="dd">NAJBOLJE ZA VAS</h1>
             <br>
-            <p id="d1tekst"> Dva restorana. Jedna misija. Negovati dobar ukus i ugoditi svim čulima, bilo da je to kroz doručak, ručak, večeru ili užinu.
+            <p id="d1onamatekst"> Dva restorana. Jedna misija. Negovati dobar ukus i ugoditi svim čulima, bilo da je to kroz doručak, ručak, večeru ili užinu.
             </p>
         </div>
 
         <div id="d2onama">
+            <img id="d2onamaslika" src="../Kumo-main/Slike/onama.jpg">
         </div>
 
         <div id="d3onama">
@@ -63,16 +68,18 @@
         <div class="roditelj1">
         
         <div id="f1">
-            <a href="https://www.facebook.com/" target="_blank"> <img src="Slike/fb.png" id="fb"></a>
-            <a href="https://www.instagram.com/" target="_blank"><img src="Slike/ig.png" id="ig"></a>
+            <a onclick="fejs()"> <img src="Slike/fb.png" alt="FB" class="ikonica"></a>
+            <a onclick="ig()"><img src="Slike/ig.png" alt="IG" class="ikonica"></a>
         </div>
 
+        <form onsubmit="return false">
         <div id="f2">
             <p id="news">PRIJAVI SE ZA NEWSLETTER</p>
             <input type="text" id="news1" placeholder="UNESITE EMAIL">
             <br>
-            <button id="news2">Pošalji</button>
+            <button id="news2" onclick="newsletter()">Pošalji</button>
         </div>
+    </form>
 
         <div id="f3">
             <h4 id="rv">RADNO VREME</h4>
@@ -85,5 +92,7 @@
 
         </div>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>

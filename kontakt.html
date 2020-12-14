@@ -9,18 +9,22 @@
 
 <body>
     <header class="header" id="myheader">
-        <div id="h1">
-            <a id="meni" href="http://localhost:8081/Domaci/meni.html">Meni</a>
-            <a id="onama" href="http://localhost:8081/Domaci/onama.html">O nama</a>
+        <div class="meniel">
+            <a id="meni" href="meni.html">Meni</a>
+        </div>
+        <div class="meniel">
+            <a id="onama" href="onama.html">O nama</a>
         </div>
 
-        <div id="h2">
-            <a href="http://localhost:8081/Domaci/index.html"><img id="logo" src="Slike/logo.png"></a>
+        <div class="meniel">
+            <a href="index.html"><img id="logo" alt = "KUMO" src="Slike/logo.png"></a>
         </div>
         
-        <div id="h3">
-            <a id="galerija" href="http://localhost:8081/Domaci/galerija.html">Galerija</a>
-            <a id="kontakt" href="http://localhost:8081/Domaci/kontakt.html">Kontakt</a>
+        <div class="meniel">
+            <a id="galerija" href="galerija.html">Galerija</a>
+        </div>
+        <div class="meniel">
+            <a id="kontakt" href="kontakt.html">Kontakt</a>
         </div>
     </header>
 
@@ -28,7 +32,7 @@
         <div class="k" id="k1">
             <h1 id="k1naslov">RASPOLOŽENI ZA AVANTURU?</h1>
             <br>
-            <p class="k1tekst">PRONAĐITE NAS NA JEDNOJ OD DVE LOKACIJE U BEOGRADU.</p>
+            <p class="k1tekst">PRONAÐITE NAS NA JEDNOJ OD DVE LOKACIJE U BEOGRADU.</p>
             <p class="k1tekst">USKORO OTVARANJE NOVIH LOKACIJA.</p>
         </div>
 
@@ -39,13 +43,13 @@
         <div class="red">
             <div class="kolona">
                 <a class="loksl" href="https://www.google.com/maps/place/Gandijeva+44,+Beograd/data=!4m2!3m1!1s0x475a6f70bfd6dbcb:0x643b74ad34652543?sa=X&ved=2ahUKEwiegcDj5rvtAhVChqQKHT3KD5AQ8gEwAHoECAMQAQ"
-                target="_blank"> <img src="Slike/mapa1.jpg" class="loksl1" style="width: 85%"> </a>
+                target="_blank"> <img src="Slike/mapa1.jpg" alt="Novi Beograd" class="loksl1" style="width: 85%"> </a>
                 <p class="loktekst">Gandijeva 44, Novi Beograd</p>
             </div>
 
             <div class="kolona">
                 <a class="loksl" href="https://www.google.com/maps/place/Katani%C4%87eva+13,+Beograd+11000/data=!4m2!3m1!1s0x475a700b308e00df:0xb0f355501b17d257?sa=X&ved=2ahUKEwj5lJr99bvtAhUL-qQKHWoYDMgQ8gEwAHoECAMQAQ"
-                target="_blank"> <img src="Slike/mapa2.jpg" class="loksl1" style="width: 85%"> </a>
+                target="_blank"> <img src="Slike/mapa2.jpg" alt="Vračar" class="loksl1" style="width: 85%"> </a>
                 <p class="loktekst">Katanićeva 13, Vračar</p>
             </div>
         </div>
@@ -63,50 +67,57 @@
         </div>
 
         <div class="k" id="k4">
-            <form id="forma">
+            <form onsubmit="return false">
                 <h1 id="k4naslov">VAŠA RECENZIJA</h1> <br>
-                <input type="text" id="r1" placeholder="IME"> <br>
-                <input type="text" id="r2" placeholder="EMAIL"> <br>
-                <input type="text" id="r3" placeholder="KOMENTAR"> <br>
+
+                <input type="text" class="r" id="r1" placeholder="IME"> <br>
+                <input type="text" class="r" id="r2" placeholder="EMAIL"> <br>
+                <input type="text" class="r" id="r3" placeholder="KOMENTAR"> <br>
+
                 <label for="poseta">DA LI BISTE NAS POSETILI OPET?</label> <br>
                 <input type="radio" name="posetaime" value="NE" id="poseta1" class="poseta">
+
                 <label for="poseta">NE</label>
                 <input type="radio" name="posetaime" value="MOŽDA" id="poseta2" class="poseta">
+
                 <label for="poseta">MOŽDA</label>
                 <input type="radio" name="posetaime" value="DA" id="poseta3" class="poseta">
+
                 <label for="poseta">DA</label>
                 <br> <br>
                 <span>VAŠA OCENA: </span>
                 <select name="ocenaime" id="ocenanaziv" class="ocena">
-                    <option value="1">1</option>
-                    <option value="2">2</option>
+                    <option value="1">5</option>
+                    <option value="2">4</option>
                     <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
+                    <option value="4">2</option>
+                    <option value="5">1</option>
                 </select>
                 <br>
 
-
- <br>
-                <button id="rb" onclick="prozor();">Pošalji</button>
+                <br>
+                <input type="submit" value="Pošalji" id="rb" onclick="pitanje()">
             </form>
         </div>
+
     </div>
 
     <footer class="footer" id="myfooter">
         <div class="roditelj1">
         
         <div id="f1">
-            <a href="https://www.facebook.com/" target="_blank"> <img src="Slike/fb.png" id="fb"></a>
-            <a href="https://www.instagram.com/" target="_blank"><img src="Slike/ig.png" id="ig"></a>
+            <a onclick="fejs()"> <img src="Slike/fb.png" alt="FB" class="ikonica"></a>
+            <a onclick="ig()"><img src="Slike/ig.png" alt="IG" class="ikonica"></a>
         </div>
 
+        <form onsubmit="return false">
         <div id="f2">
             <p id="news">PRIJAVI SE ZA NEWSLETTER</p>
             <input type="text" id="news1" placeholder="UNESITE EMAIL">
             <br>
-            <button id="news2">Pošalji</button>
+            <button id="news2" onclick="newsletter()">Pošalji</button>
         </div>
+    </form>
 
         <div id="f3">
             <h4 id="rv">RADNO VREME</h4>

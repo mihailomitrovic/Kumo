@@ -10,6 +10,7 @@ body {
 ::-webkit-scrollbar {
     width: 5px;
 }
+
 ::-webkit-scrollbar-track {
     box-shadow: transparent;
     -webkit-border-radius: 10px;
@@ -30,17 +31,12 @@ body {
 
 @font-face {
     font-family: "myFontLight";
-    src: url(../Domaci/Font/LemonMilkLight-owxMq.otf) format("truetype");
+    src: url(../Kumo-main/Font/LemonMilkLight-owxMq.otf) format("truetype");
 }
 
 @font-face {
     font-family: "myFontBold";
-    src: url(../Domaci/Font/LemonMilkBold-gx2B3.otf) format("truetype");
-}
-
-a{
-    padding: 10px;
-    background-color: transparent;
+    src: url(../Kumo-main/Font/LemonMilkBold-gx2B3.otf) format("truetype");
 }
 
 a {
@@ -48,6 +44,8 @@ a {
     font-family: myFontLight;
     font-size: 18px;
     text-decoration: none;
+    padding: 10px;
+    background-color: transparent;
 }
 
 a:hover {
@@ -76,31 +74,22 @@ p, h1 {
     position: fixed;
     height: 100px;
     width: 100%;
-    display: grid;
-    grid-template-columns: 40% 8% 40%;
-    justify-content: center;
+    display: flex;
+    flex-direction: row;
     align-items: center;
     text-align: center;
 }
 
-#akcija {
-   height: 100%;
-   width: 100%;
+.meniel{
+    flex: 1;
+}
+
+
+#akcijasl {
+    width: 100%;
    padding-top: 100px;
-   display: flex;
-   max-width: none;
-}
-
-#h1 {
-    text-align: right;
-}
-
-#h2 {
-    align-content: center;
-}
-
-#h3 {
-    text-align: left;
+   align-self: center;
+   object-fit: cover;
 }
 
 .roditelj div {
@@ -114,10 +103,11 @@ p, h1 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
 }
 
 #d1 {
-    width: 40em;
+    width: 50%;
     padding-top: 120px;
     padding-bottom: 150px;
     text-align: center;
@@ -130,9 +120,9 @@ p, h1 {
 
 #d2 {
     text-align: center;
-    width: 900px;
-    height: 350px;
-    background-image: url(../Domaci/Slike/sushi.png);
+    width: 700px;
+    height: 300px;
+    background-image: url(../Kumo-main/Slike/sushi.jpg);
     background-size: cover;
     border-color: white;
     border-style: solid;
@@ -144,15 +134,16 @@ p, h1 {
 }
 
 #jel1 {
-    margin-top: 65px;
+    margin-top: 33px;
     color: rgb(223, 162, 121);
 }
 
 #jel2 {
-    margin-left: 270px;
-    margin-right: 270px;
-    margin-top: 20px;
+    margin-top: 10px;
     margin-bottom: 30px;
+    text-align: center;
+    margin-left: 160px;
+    margin-right: 160px;
 }
 
 #jeld {
@@ -192,7 +183,7 @@ p, h1 {
     flex-direction: column;
 }
 
-#fb {
+.ikonica {
     height: 30px;
     width: 30px;
     background-color: transparent;
@@ -200,11 +191,8 @@ p, h1 {
     margin-top: 50px;
 }
 
-#ig {
-    height: 30px;
-    width: 30px;
-    background-color: transparent;
-    padding-left: 2px;
+.ikonica:hover {
+    cursor: pointer;
 }
 
 #news {
@@ -275,27 +263,30 @@ p, h1 {
 /* O NAMA */
 
 #d1onama {
-    width: 40em;
+    width: 700px;
     padding-top: 160px;
     text-align: center;
     padding-bottom: 60px;
 }
 
-#d1tekst {
+#d1onamatekst {
     font-style: italic;
     color: rgb(231, 214, 194);
     font-size: 15px;
 }
 
 #d2onama {
-    background-image: url(../Domaci/Slike/onama.jpg);
-    background-size: cover;
-    width: 752px;
-    height: 380px;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#d2onamaslika {
+    width: 80%;
 }
 
 #d3onama{
-    width: 40em;
+    width: 700px;
     padding-top: 60px;
     padding-bottom: 30px;
     text-align: center;
@@ -392,6 +383,8 @@ p, h1 {
 
 #k3naslov {
     font-family: myFontLight;
+    color: rgb(231, 214, 194);
+    padding-top: 80px;
 }
 
 .k3head {
@@ -403,11 +396,6 @@ p, h1 {
     font-family: myFontLight;
 }
 
-#k3naslov {
-    color: rgb(231, 214, 194);
-    padding-top: 80px;
-}
-
 #k4naslov {
     color: rgb(231, 214, 194);
     padding-top: 80px;
@@ -415,42 +403,25 @@ p, h1 {
 
 .red {
     display: flex;
-  }
+}
   
 .kolona {
     flex: 33.33%;
     padding: 15px;
 }
 
+.r {
+    background-color: rgb(231, 214, 194);
+    color: black;
+    font-family: myFontLight;
+    height: 30px;
+    width: 300px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
 #r1 {
-    background-color: rgb(231, 214, 194);
-    color: black;
-    font-family: myFontLight;
     margin-top: 20px;
-    height: 30px;
-    width: 300px;
-    margin-bottom: 20px;
-    text-align: center;
-}
-
-#r2 {
-    background-color: rgb(231, 214, 194);
-    color: black;
-    font-family: myFontLight;
-    height: 30px;
-    width: 300px;
-    margin-bottom: 20px;
-    text-align: center;
-}
-
-#r3 {
-    background-color: rgb(231, 214, 194);
-    color: black;
-    font-family: myFontLight;
-    height: 30px;
-    width: 300px;
-    margin-bottom: 40px;
-    text-align: center;
 }
 
 #rb {
@@ -468,10 +439,6 @@ p, h1 {
 #rb:hover {
     background-color: rgb(17, 17, 17);
     cursor: pointer;
-}
-
-.ocenakl {
-    padding: 100px;
 }
 
 /* MENI */
@@ -494,15 +461,19 @@ p, h1 {
     font-size: 25px;
     text-align: center;
     font-weight: bold;
+    padding-top: 60px;
+    scroll-margin-top: 100px;
 }
 
 #supepodnaslov {
     padding-top: 160px;
 }
 
-.menipodnaslov {
-    padding-top: 60px;
-    scroll-margin-top: 100px;
+.lista {
+    list-style-type: none;
+    font-family: myFontLight;
+    color: white;
+    size: 10px;
 }
 
 .opis {
@@ -511,13 +482,6 @@ p, h1 {
     size: 10px;
     text-align: center;
     padding-top: 25px;
-}
-
-.lista {
-    list-style-type: none;
-    font-family: myFontLight;
-    color: white;
-    size: 10px;
 }
 
 #menifull {
@@ -545,4 +509,41 @@ p, h1 {
 #logodno {
     width: 30%;
     text-align: center;
+}
+
+@media all and (max-width: 768px) {
+    .red{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #d2{
+        width: 500px;
+        height: 410px;
+        background: transparent;
+    }
+
+    #d3onama{
+        width: 80%;
+    }
+
+    #d2onama {
+        text-align: center;
+    }
+
+    #d2onamatekst {
+        width: 80%;
+    }
+
+    #d1onama{
+        width: 80%;
+    }
+    
+    .redmeni{
+        flex-direction: column;
+    }
+
+    #menilevo {
+        margin-left: 15px;
+    }
 }
